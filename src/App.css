@@ -1,38 +1,41 @@
 .App {
-  text-align: center;
+  display: "flex";
+  flex-direction: "column";
+  justify-content: "center";
+  align-items: "center";
+  width: "100%";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Sign In */
+
+.SignIn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* End of Sign In */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Form Inputs */
+
+.formContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#standard-basic {
+  width: "90vw";
+  max-width: "500px"; 
 }
+
+/* End of form inputs */
