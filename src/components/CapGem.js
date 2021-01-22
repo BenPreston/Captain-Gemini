@@ -54,8 +54,9 @@ export default function CapGem() {
           <Route exact path="/add/events">
            <AddEvent />
           </Route>
+          <Footer />
         </Router>
-        <Footer />
+
         </div>
     )
 }
