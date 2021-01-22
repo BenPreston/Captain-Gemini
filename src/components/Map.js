@@ -3,8 +3,9 @@ import { useState, useEffect } from 'react'
 import GoogleMapReact from 'google-map-react'
 
 import StormMarker from './StormMarker'
+import BoatMarker from './BoatMarker'
 
-function Map({ center, zoom}) {
+function Map({ friend_boat, own_boat, center, zoom}) {
 
   const [eventData, setEventData] = useState([])
 
@@ -58,6 +59,8 @@ function Map({ center, zoom}) {
           defaultCenter={center}
           defaultZoom={zoom}
       >
+      <BoatMarker lat={own_boat.lat} lng={own_boat.lng} type='boat_marker boat_own' />
+      <BoatMarker lat={friend_boat.lat} lng={friend_boat.lng} type='boat_marker boat_friend' />
       {markers}
       </GoogleMapReact>
   </div>
@@ -69,7 +72,15 @@ Map.defaultProps = {
       lat: -22,
       lng: 46.5
   },
-  zoom: 6
+  own_boat: {
+    lat: -25,
+      lng: 50
+  },
+  friend_boat: {
+    lat: -26,
+      lng: 51
+  },
+  zoom: 5
 }
 
 export default Map

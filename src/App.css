@@ -69,6 +69,18 @@ flex-grow: 1;
 text-align: center;
 }
 
+.boat_marker {
+  font-size: x-large;
+}
+
+.boat_own {
+  color: red;
+}
+
+.boat_friend {
+  color: green;
+}
+
 /* end of Map.js */
 
 /* List Page */
