@@ -70,3 +70,29 @@ text-align: center;
 }
 
 /* end of Map.js */
+
+/* List Page */
+
+.listPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End of List Page */
+
+/* Routes */
+
+button#submit {
+  margin-top: 30px;
+}
+
+/* End of Routes */
+
+/* StormMarker.js */
+.storm-marker {
+  font-size: x-large
+}
+
+/* End of StormMarker.js */

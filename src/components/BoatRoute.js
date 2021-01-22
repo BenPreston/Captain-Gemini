@@ -6,7 +6,7 @@ export default function BoatRoute () {
 
   return (
         <div>
-            <h1>ahhhh {id}</h1>
+            <h1>BoatRoute {id}</h1>
         </div>
   )
 }

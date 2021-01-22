@@ -1,8 +1,7 @@
 import React from "react";
 import { ListItem, ListItemText, Button } from "@material-ui/core";
-// import { db } from "../firebase_config";
 
-export default function BoatRouteItem( { start_location, finish_location, distance, average_time } ) {
+export default function BoatRouteItem( { start_location, finish_location } ) {
 
   return (
       <ListItem>
@@ -12,12 +11,7 @@ export default function BoatRouteItem( { start_location, finish_location, distan
         <ListItemText
           primary={finish_location}
         />
-         <ListItemText
-          primary={distance}
-        />
-         <ListItemText
-          primary={average_time}
-        />
+        <Button className="">Details</Button>
       </ListItem>
   );
 }

@@ -36,7 +36,6 @@ export default function AddRoute() {
         setFinishLocation("");
         setStartLocation("");
         setStartPoint("");
-        
       }
 
     return (
@@ -87,6 +86,7 @@ export default function AddRoute() {
           />
 
           <Button
+            id="submit"
             type="submit"
             variant="contained"
             onClick={AddRoute}

@@ -15,7 +15,6 @@ export default function Footer () {
 
   return (
      <div className='footer'>
-         {/* <Router> */}
             <BottomNavigation
             value={value}
             onChange={(event, newValue) => {
@@ -45,7 +44,6 @@ export default function Footer () {
             </NavLink>
 
         </BottomNavigation>
-      {/* </Router> */}
      </div>
   )
 }

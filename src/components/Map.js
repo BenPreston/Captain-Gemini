@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 
 import GoogleMapReact from 'google-map-react'
 
-import boatData from '../data/SampleData'
 import StormMarker from './StormMarker'
 
 function Map({ center, zoom}) {
@@ -11,13 +10,11 @@ function Map({ center, zoom}) {
 
   useEffect(() => {
     const fetchEvents = async () => {
-      // setLoading(true)
       const res = await fetch('https://eonet.sci.gsfc.nasa.gov/api/v2.1/events')
       const { events } = await res.json()
 
       setEventData(events)
 
-      // setLoading(false)
     }
 
     fetchEvents()
@@ -47,8 +44,6 @@ function Map({ center, zoom}) {
   />  
 
   })
-
-  console.log(boatData)
 
     return (
       <div className="map">

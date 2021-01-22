@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { db } from "../firebase_config";
+import { Link } from "react-router-dom"
 
 import BoatRouteItem from "./BoatRouteItem";
+import { Button } from "@material-ui/core";
 
 
 export default function RouteList() {
@@ -20,22 +22,19 @@ export default function RouteList() {
             finish_location: doc.data().finish_location,
             distance: doc.data().distance,
             average_time: doc.data().average_time,
-            
-
-
           }))
         );
       });
     }
   
     return (
-        <div>
-            <BoatRouteItem
-              start_location='Start'
-              finish_location='Finish'
-              distance='Distance'
-              average_time='Av Time'
-            />
+        <div className='listPage'>
+          <h1>List of Routes</h1>
+          <Link exact activeClassName="active" to={'add/routes'}>
+            <Button className="">Add Route</Button>
+          </Link>
+
+    
           {routes.map((route) => (
             <BoatRouteItem
               start_location={route.start_location}
