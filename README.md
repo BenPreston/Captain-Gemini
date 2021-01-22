@@ -4,7 +4,7 @@ This project was is a Create React App designed to respon to a Capgemini task.
 
 Due to time constraints it has only had two evenings of work and so is currently unfinished.
 
-It is intended to show research and design principles, which can be seen in full on the three page PDF  [Captain Gemini - Design Brief and Spe]()
+It is intended to show research and design principles, which can be seen in full on the three page PDF  [Captain Gemini - Design Brief and Spe](https://github.com/BenPreston/Captain-Gemini/blob/main/Captain%20Gemini%20-%20Design%20Brief%20%26%20Spec.pdf)
 
 ## Code Overview
 

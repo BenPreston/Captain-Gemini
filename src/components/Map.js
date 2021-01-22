@@ -48,9 +48,9 @@ function Map({ center, zoom}) {
     return (
       <div className="map">
           <div className='mapButtons'>
-            <a class="active" href="www.bbc.co.uk">Friends</a>
-            <a href="www.bbc.co.uk">Floatilla</a>
-            <a href="www.bbc.co.uk">Local</a>
+            <a class="active" href="">Friends</a>
+            <a href="">Floatilla</a>
+            <a href="">Local</a>
         </div>
 
       <GoogleMapReact
