@@ -90,9 +90,8 @@ export default function AddRoute() {
             type="submit"
             variant="contained"
             onClick={AddRoute}
-            style={{ display: "none" }}
           >
-            Default
+            Submit
           </Button>
         </form>
  

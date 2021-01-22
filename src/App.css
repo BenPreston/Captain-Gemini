@@ -39,3 +39,34 @@ form {
 }
 
 /* End of form inputs */
+
+/* Footer */
+
+.footer {
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  margin-top: 30px;
+}
+
+/* end of footer */
+
+/* Map.js */
+
+.map {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.mapButtons {
+display: flex;
+}
+
+a {
+flex-grow: 1;
+text-align: center;
+}
+
+/* end of Map.js */
